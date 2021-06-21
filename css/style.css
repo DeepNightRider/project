@@ -1,0 +1,230 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables  */
+:root{
+    --navbar-height: 10px;
+}
+
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    width: 101%;
+ 
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image  */
+#logo{
+    margin:10px 34px;
+}
+
+
+#logo img{
+    height: 70px;
+    margin: 3px 6px;   
+}
+
+/* Navigation bar: List styling  */
+
+#navbar ul{
+    display: flex;
+    font-family:  'Baloo Bhaina 2', cursive;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 3px 9px;
+    color: white;
+}
+
+ #navbar ul li a{
+    color: white; 
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none; 
+} 
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 460px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#home::before{
+    content: "";
+    background: url('/images/wp3105346.jpg') no-repeat center center/cover;
+    position: absolute;
+    padding: 3px 0px;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 101%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+/* contact section  */
+#contact{
+    position: relative;
+    background: url('/images/contact-us-2993000_1280.jpg') no-repeat center center/cover;
+    width: 101%;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input{
+
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 3px 0px;
+    width: 101%;
+}
+.center{
+    text-align: center;
+}
+/* services section  */
+.services-container{
+    text-align: center;
+}
+#service{
+    margin: -18px;
+    display: flex;
+    padding: 13px 39px;
+
+}
+#service .box{
+    border: 2px solid brown;
+    text-align: center;
+    margin: 2px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 14px;
+    background: rgb(216, 210, 210);
+}
+
+#service .box img{
+    height:170px;
+    margin: auto;
+    display: block;
+}
+/* Clients sections  */
+#client-sction{
+    position: relative;
+    height: 344px;
+
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../images/food-still-life-salmon-keto-healthy-eating-1296x728-header.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.client-items{
+    padding: 34px;
+}
+#clients-img{
+    height: 124px;
+}
+/* utility classes  */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 29px;
+    text-align: center;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 28px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
